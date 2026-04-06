@@ -186,7 +186,6 @@
     },
 
     showDisclaimer : function() {
-      clearLessCache();
       if (this.settings.activeCookieTypes === '') {
         return;
       }
@@ -424,9 +423,6 @@ document.observe("dom:loaded", function() {
     var cookieConsent = new CookieConsent(settings);
   });
 });
-  function clearLessCache() {
-    var cache = "$services.lesscss.clearCache()";
-  }
 #end</code>
     </property>
     <property>
